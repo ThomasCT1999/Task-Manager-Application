@@ -1,7 +1,7 @@
 // Import Routes and Route from react-router-dom
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import LandingPage from './LandingPage';
-import Login from './login';
+import LandingPage from './components/LandingPage'; // Adjusted the filename
+import Login from './components/Login';
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
       <Routes>
         {/* Use Route to define individual routes */}
         <Route path="/" element={<LandingPage />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/Login" element={<Login />} /> {/* Adjusted the path */}
       </Routes>
     </Router>
   );
