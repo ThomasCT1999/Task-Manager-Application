@@ -1,18 +1,17 @@
-// App.js
-
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// Import Routes and Route from react-router-dom
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from './LandingPage';
-import Login from './Login';
+import Login from './login';
 
 const App = () => {
   return (
     <Router>
-      {/* Use Switch to wrap your Route components */}
-      <Switch>
-        <Route path="/" exact component={LandingPage} />
-        <Route path="/login" component={Login} />
-      </Switch>
+      {/* Use Routes to define your route configuration */}
+      <Routes>
+        {/* Use Route to define individual routes */}
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
     </Router>
   );
 };
