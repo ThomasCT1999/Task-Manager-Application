@@ -1,8 +1,8 @@
 // Import Routes and Route from react-router-dom
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import LandingPage from './components/LandingPage'; // Adjusted the filename
-import Login from './components/Login';
+import LandingPage from './pages/LandingPage'; // Adjusted the filename
+import Login from './pages/Login';
 
 const App: React.FC = () => {
   return (
