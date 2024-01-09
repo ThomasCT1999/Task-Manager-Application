@@ -6,6 +6,6 @@ const credentialsSchema = new mongoose.Schema({
   email: { type: String, required: true },
 });
 
-const Credentials = mongoose.model('Credentials', credentialsSchema);
+const Credentials = mongoose.model('Credentials', credentialsSchema, 'credentials');
 
 module.exports = Credentials;

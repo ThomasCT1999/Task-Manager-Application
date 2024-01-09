@@ -22,8 +22,7 @@ const Register = () => {
 
     try {
       // Make a POST request to the server
-      const response = await axios.post('http://localhost:3001/register', formData);
-
+      const response = await axios.post('http://localhost:6463/register', formData);
       // Handle the response, e.g., show a success message
       console.log(response.data);
     } catch (error) {
